@@ -1,16 +1,17 @@
-package com.cooloongwu.jumphelper;
+package com.wzy.jumphelper;
 
 import android.app.Application;
 import android.content.Context;
 import android.graphics.PixelFormat;
+import android.os.Build;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
 
-import com.cooloongwu.jumphelper.utils.OSUtils;
-import com.cooloongwu.jumphelper.view.ManualFloatView;
+import com.wzy.jumphelper.utils.OSUtils;
+import com.wzy.jumphelper.view.ManualFloatView;
 
 /**
  * 自定义Application，来实现简单临时的数据缓存
@@ -63,7 +64,12 @@ public class MyApplication extends Application {
         params.format = PixelFormat.RGBA_8888;
         params.flags = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
         params.alpha = 0.8f;
-        params.type = WindowManager.LayoutParams.TYPE_SYSTEM_ALERT;
+        if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
+            params.type = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY;
+        }else {
+            params.type = WindowManager.LayoutParams.TYPE_SYSTEM_ALERT;
+        }
+
     }
 
     /**

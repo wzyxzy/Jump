@@ -1,9 +1,9 @@
-package com.cooloongwu.jumphelper.utils;
+package com.wzy.jumphelper.utils;
 
 import android.os.Environment;
 import android.util.Log;
 
-import com.cooloongwu.jumphelper.MyApplication;
+import com.wzy.jumphelper.MyApplication;
 
 import java.io.File;
 import java.util.Random;
@@ -33,14 +33,14 @@ public class Config {
      * @return 获取[100, 200]之间随机的触摸区域，小于100的话有一个分享按钮可能会被点击
      */
     private int getTouchX() {
-        return new Random().nextInt(200) + 100;
+        return new Random().nextInt(200) + 300;
     }
 
     /**
      * @return 获取屏幕高度的85%以下的随机触摸区域
      */
     private int getTouchY() {
-        return (MyApplication.getInstance().getScreenHeight() / 100 * (new Random().nextInt(16) + 85));
+        return (MyApplication.getInstance().getScreenHeight() / 100 * (new Random().nextInt(16) + 60));
     }
 
 

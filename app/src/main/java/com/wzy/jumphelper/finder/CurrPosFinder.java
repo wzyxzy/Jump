@@ -1,4 +1,4 @@
-package com.cooloongwu.jumphelper.finder;
+package com.wzy.jumphelper.finder;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;

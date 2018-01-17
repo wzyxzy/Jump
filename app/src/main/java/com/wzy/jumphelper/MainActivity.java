@@ -1,4 +1,4 @@
-package com.cooloongwu.jumphelper;
+package com.wzy.jumphelper;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,8 +13,8 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.cooloongwu.jumphelper.view.AutoFloatView;
-import com.cooloongwu.jumphelper.view.ManualFloatView;
+import com.wzy.jumphelper.view.AutoFloatView;
+import com.wzy.jumphelper.view.ManualFloatView;
 
 import ezy.assist.compat.SettingsCompat;
 
@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private boolean checkPermission() {
         if (SettingsCompat.canDrawOverlays(this)) {
             textMsg.setText("悬浮窗权限已获取");
+//            SettingsCompat.manageDrawOverlays(this);
             return true;
         } else {
             textMsg.setText("请在设置中为该应用开启悬浮窗权限");

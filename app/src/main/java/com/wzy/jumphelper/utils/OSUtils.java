@@ -1,4 +1,4 @@
-package com.cooloongwu.jumphelper.utils;
+package com.wzy.jumphelper.utils;
 
 import android.util.Log;
 

@@ -1,4 +1,4 @@
-package com.cooloongwu.jumphelper.view;
+package com.wzy.jumphelper.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -14,12 +14,12 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.cooloongwu.jumphelper.MyApplication;
-import com.cooloongwu.jumphelper.R;
-import com.cooloongwu.jumphelper.finder.CurrPosFinder;
-import com.cooloongwu.jumphelper.finder.NextPosFinder;
-import com.cooloongwu.jumphelper.utils.Config;
-import com.cooloongwu.jumphelper.utils.OSUtils;
+import com.wzy.jumphelper.MyApplication;
+import com.wzy.jumphelper.R;
+import com.wzy.jumphelper.finder.CurrPosFinder;
+import com.wzy.jumphelper.finder.NextPosFinder;
+import com.wzy.jumphelper.utils.Config;
+import com.wzy.jumphelper.utils.OSUtils;
 
 import java.io.File;
 
